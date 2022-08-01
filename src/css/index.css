@@ -1,15 +1,41 @@
-.hero-Bg{
-      background-image: url("../public/images/hero-Background.png");
-      background-size: cover;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-}
-.hero-Bg:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 20;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.content__max-width {
+      max-width: 1120px;
     }
+    
+    .header__max-height {
+      max-height: 800px;
+    }
+    
+.heroBg{
+      /* border: 10rem solid red; */
+      background-image: url("/public/images/hero-Background.png");
+      background-size: cover;
+      width: 100%;
+      height: 400px;
+}
+.Poppins-400{
+      font-family: 'Poppins';
+      font-weight: 400;
+}
+
+.Poppins-500{
+      font-family: 'Poppins';
+      font-weight: 500;
+}
+
+.Poppins-600{
+      font-family: 'Poppins';
+      font-weight: 600;
+}
+
+.Poppins-700{
+      font-family: 'Poppins';
+      font-weight: 700;
+}
+
+@media screen and (min-width: 767px) {
+      .heroBg{
+            height: 756px;
+      }
+}
