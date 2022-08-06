@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
     /* Smooth scroll behavior */
     :root {
       scroll-behavior: smooth;
@@ -49,7 +53,7 @@
     
     .projects .portfolio-flters li:hover,
     .projects .portfolio-flters li.filter-active {
-      color: var(--color-primary);
+      color: #494949;
     }
     
     .projects .portfolio-flters li:first-child {

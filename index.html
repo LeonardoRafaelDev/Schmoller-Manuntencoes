@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <script>
     tailwind.config = {
@@ -17,6 +18,8 @@
             Gray: '#3A4045',
             Black: '#1C2024',
             BlackLight: '#181E20',
+            Footer:'#B2BBC0',
+            Purple:'#782BF1'
           }
         }
       }
@@ -53,15 +56,15 @@
       <!--hero-->
         <section class="bg-no-repeat relative heroBg flex justify-center items-center p-6 xl:p-6">
             <div>
-            <div class=" mt-24 md:mt-0 mb-14 sm:pt-24">
+            <div data-aos="fade-up" data-aos-duration="1000" class="mt-24 md:mt-0 mb-14 sm:pt-24">
                 <h1 class="text-2xl z-12 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white Poppins-700 mb-2">Schmoller Manutenções</h1>
                 <h2 class="text-xl typewrite z-12 sm:text-2xl text-center text-GrayLight Poppins-400 data-period="2000" data-type='[ "Soluções industriais", "Soluções Metalurgicas", "Soluções para soldas", "Solução para seu Projeto" ]'"> <span class="wrap"></span></h2>
             </div>
-            <div class="flex justify-center items-center mb-10 sm:mb-20">
+            <div data-aos="fade-up" data-aos-duration="2000" class="flex justify-center items-center mb-10 sm:mb-20">
               <a href="https://api.whatsapp.com/send?phone=554899951400&text=Ola%20vim%20pelo%20site%2C%20Gostaria%20de%20solicitar%20um%20Or%C3%A7amento"> <button class="align-middle text-lg bg-Gray drop-shadow-lg text-white rounded Poppins-600 px-4 py-2 sm:px-8  sm:py-3"> Faça seu orçamento <i class="fa-brands fa-whatsapp"></i> </button></a>
             </div>
-            <div class ="flex justify-center items-center">
-              <img class="h-28 w-28" src="/public/images/hero-arrow.png" alt="">
+            <div data-aos="fade-up"data-aos-duration="2500"  class ="flex justify-center items-center">
+              <img class="h-28 w-28" src="/public/images/hero-arrow.png" alt="seta para baixo">
             </div>
         </div>
         </section>
@@ -69,23 +72,23 @@
 
       <!--Porquenosecolher-->
         <section class="w-full content__max-width mt-14 mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max flex items-center">
-          <div class="hidden scroll-left-1 lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
+          <div data-aos="fade-right" data-aos-duration="1000" class="hidden scroll-left-1 lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
               <div class="w-96">
                   <img alt="Homem lixando parte metalica" src="/public/images/image-section-why-choice.webp">
               </div>
           </div>
-          <div class="md:w-12/12 lg:w-8/12">
+          <div data-aos="fade-left" data-aos-duration="2000" class="md:w-12/12 lg:w-8/12">
               <div class="flex flex-wrap">
                   <div class="md:w-12/12">
                       <div class="flex flex-col mt-4">
-                          <div class="scroll-bottom-1 px-1 md:px-0 flex-auto">
+                          <div class="px-1 md:px-0 flex-auto">
                               <h2 class="mb-1 drop-shadow-lg text-BlackLight Poppins-400 text-sm md:text-xl lg:text-xl ">
                                 Porque nos escolher?</h2>
                               <p class="mb-1 drop-shadow-lg text-Black Poppins-600 text-xl md:text-3xl lg:text-4xl">
                                 Trabalhamos com objetivo de entregar com rapidez e a melhor qualidade do mercado!</p>
                           </div>
                       </div>
-                      <div class="scroll-bottom-2 flex flex-col mt-6 min-w-0">
+                      <div class="flex flex-col mt-6 min-w-0">
                           <div class="flex-auto">
                             <a href="https://api.whatsapp.com/send?phone=554899951400&text=Ola%20vim%20pelo%20site%2C%20Gostaria%20de%20solicitar%20um%20Or%C3%A7amento"> <button class="align-middle text-lg bg-Gray drop-shadow-lg text-white rounded Poppins-600 px-4 py-2 sm:px-8  sm:py-3"> Faça seu orçamento <i class="fa-brands fa-whatsapp"></i> </button></a>
                           </div>
@@ -99,14 +102,14 @@
       <!--estamossemprepreparados-->
         <section class="w-full mt-14 content__max-width mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max">
           <div class="flex text-center items-center flex-col mt-4">
-            <div class="scroll-bottom-1 mb-2 px-1 md:px-0">
+            <div data-aos="fade-up" data-aos-duration="1000" class="mb-2 px-1 md:px-0">
               <h2 class="mb-1 drop-shadow-lg  text-BlackLight Poppins-400 text-sm md:text-xl lg:text-xl ">
                 Estamos sempre preparados</h2>
               <p class="mb-1 drop-shadow-lg text-Black Poppins-600 text-xl md:text-3xl lg:text-4xl">
                 Para qualquer tipo de <br> exigência e demanda!</p>
             </div>
-          <div class="scroll-bottom-3 flex justify-center grid grid-rows-6  md:grid-rows-2 grid-flow-col  lg:gap-4  w-full">
-            <div class=" w-60  m-1 md:w-52 lg:w-60 relative h-fit rounded-xl bg-white shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-Gray">
+          <div data-aos="fade-up" data-aos-duration="3000" class="flex justify-center grid grid-rows-6  md:grid-rows-2 grid-flow-col  lg:gap-4  w-full">
+            <div  class=" w-60  m-1 md:w-52 lg:w-60 relative h-fit rounded-xl bg-white shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-Gray">
                 <div class="flex drop-shadow-lg  flex-col justify-center items-center">
                     <img src="/public/images/icon-atendimento-ao-cliente.png" class="drop-shadow-lg w-30 h-28 pt-5 pb-1 px-4 lg:pt-8 lg:pb-1 lg:px-14">
                         </img>
@@ -161,23 +164,23 @@
 
 
 <section class="w-full content__max-width mx-auto px-6 xl:px-0  min-h-max flex items-center">
-      <div class="hidden scroll-left-1 lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
+      <div data-aos="fade-right" data-aos-duration="1000" class="hidden lg:w-4/12 mr-8 xl:mr-16 lg:flex justify-start items-center">
           <div class="w-96">
-              <img alt="Uma equipe de devs trabalhando em equipe, assim que descrevemos a he4rt Developers." src="/public/images/image-section-we-love.webp">
+              <img alt="Homen serrando um cano de metal" src="/public/images/image-section-we-love.webp">
           </div>
       </div>
       <div class="md:w-12/12 lg:w-8/12">
           <div class="flex flex-wrap">
               <div class="md:w-12/12">
-                  <div class="flex flex-col mt-4">
-                      <div class="scroll-bottom-1 px-1 md:px-0 flex-auto">
+                  <div data-aos="fade-left" data-aos-duration="2000" class="flex flex-col mt-4">
+                      <div class="px-1 md:px-0 flex-auto">
                           <h2 class="mb-1 drop-shadow-lg text-BlackLight Poppins-400 text-sm md:text-xl lg:text-xl ">
                             Nos amamos o que fazemos</h2>
                           <p class="mb-1 drop-shadow-lg text-Black Poppins-600 text-xl md:text-3xl lg:text-4xl">
                             O nosso grande diferencial e que somos apaixonados pelo o que fazemos, além de nosso suporte e qualidade!</p>
                       </div>
                   </div>
-                  <div class="scroll-bottom-2 flex flex-col mt-6 min-w-0">
+                  <div data-aos="fade-left" data-aos-duration="2000" class="flex flex-col mt-6 min-w-0">
                       <div class="flex-auto">
                         <a href="https://api.whatsapp.com/send?phone=554899951400&text=Ola%20vim%20pelo%20site%2C%20Gostaria%20de%20solicitar%20um%20Or%C3%A7amento"> <button class="align-middle text-lg bg-Gray drop-shadow-lg text-white rounded Poppins-600 px-4 py-2 sm:px-8  sm:py-3"> Faça seu orçamento <i class="fa-brands fa-whatsapp"></i> </button></a>
                       </div>
@@ -188,7 +191,7 @@
 </section>
 
 <section class="flex justify-center items-center">
-  <div>
+  <div data-aos="fade-up" data-aos-duration="2000">
     <div class=" mt-24 md:mt-0 mb-14 sm:pt-24">
       <div class="flex justify-center items-center">
         <h1 class="drop-shadow-lg text-2xl z-12 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center  Poppins-700 mb-2" id="value"></h1>
@@ -205,8 +208,8 @@
 </section>
 
 <section class="w-full mt-14 content__max-width mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max">
-  <div class="flex text-center items-center flex-col mt-4">
-    <div class="scroll-bottom-3 flex justify-center grid grid-rows-6  md:grid-rows-3 grid-flow-col  lg:gap-4  w-full">
+  <div data-aos="fade-up" data-aos-duration="2000" class="flex text-center items-center flex-col mt-4">
+    <div class="flex justify-center grid grid-rows-6  md:grid-rows-3 grid-flow-col  lg:gap-4  w-full">
       <div class=" w-60  m-1 md:w-96 lg:w-96 relative h-fit rounded-xl bg-white shadow-md before:absolute before:inset-0 before:-bottom-1 before:top-1 before:-z-10 before:rounded-xl before:bg-Gray">
           <div class="mx-12 my-6 flex   items-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -272,26 +275,26 @@
 </section>
 
 
-<section id="projects" class="projects" >
+<section data-aos="fade-up" data-aos-duration="2000" id="projects" class="projects" >
     <div class="container ">
-      <div class=" section-header flex items-center justify-center  text-center">
-        <h5 class="Poppins-600  text-sm md:text-xl lg:text-xl">Alguns de nossos Projetos Finalizados</h5>
+      <div class="section-header flex items-center justify-center  text-center">
+        <h5 class="Poppins-600  text-sm md:text-xl lg:text-2xl">Alguns de nossos Projetos Finalizados</h5>
       </div>
 
       <div class="portfolio-isotope mt-4"  data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
 
-        <ul class="portfolio-flters bg-white shadow-md rounded-lg w-5/12">
-          <li data-filter="*" class="filter-active p-2">Todos</li>
-          <li data-filter=".filter-remodeling" class="p-2`">Soldas</li>
-          <li data-filter=".filter-repairs " class="p-2">Reformas</li>
-          <li data-filter=".filter-construction" class="p-2">Fabricação</li>
+        <ul class="portfolio-flters bg-white shadow-md rounded-lg w-9/12 md:w-6/12">
+          <li data-filter="*" class="filter-active p-2 md:p-4 text-sm md:text-xl">Todos</li>
+          <li data-filter=".filter-remodeling" class="p-2 md:p-4 text-sm md:text-xl">Soldas</li>
+          <li data-filter=".filter-repairs " class="p-2 md:p-4 text-sm md:text-xl">Reformas</li>
+          <li data-filter=".filter-construction" class="p-2 md:p-4 text-sm md:text-xl">Fabricação</li>
         </ul><!-- End Projects Filters -->
 
         <div class="row gy-4 portfolio-container">
 
           <div class="drop-shadow-lg col-lg-4 col-md-6 portfolio-item filter-remodeling">
             <div class="portfolio-content h-100">
-              <img src="/public/images/filter/Solda-1.webp" loading="lazy" class="img-fluid" alt="Solda em alumínio">
+              <img src="/public/images/filter/Solda-1.webp" class="img-fluid" alt="Solda em alumínio">
               <div class="portfolio-info">
                 <h4>Solda</h4>
                 <p>Solda em alumínio</p>
@@ -301,7 +304,7 @@
 
           <div class="drop-shadow-lg col-lg-4 col-md-6 portfolio-item filter-construction">
             <div class="portfolio-content h-100">
-              <img src="/public/images/filter/Fabricacao-1.webp" loading="lazy" class="img-fluid" alt="Fabricação secador de fritas ceramicas">
+              <img src="/public/images/filter/Fabricacao-1.webp" class="img-fluid" alt="Fabricação secador de fritas ceramicas">
               <div class="portfolio-info">
                 <h4>Fabricação</h4>
                 <p>Fabricação secador de fritas ceramicas</p>
@@ -311,7 +314,7 @@
 
           <div class="drop-shadow-lg col-lg-4 col-md-6 portfolio-item filter-repairs">
             <div class="portfolio-content h-100">
-              <img src="/public/images/filter/Reforma.webp" loading="lazy" class="img-fluid" alt="Fabricação e montagem silo para alimentador">
+              <img src="/public/images/filter/Reforma.webp" class="img-fluid" alt="Fabricação e montagem silo para alimentador">
               <div class="portfolio-info">
                 <h4>Reforma</h4>
                 <p>Fabricação e montagem silo para alimentador</p>
@@ -321,7 +324,7 @@
 
           <div class="drop-shadow-lg col-lg-4 col-md-6 portfolio-item filter-remodeling">
             <div class="portfolio-content h-100">
-              <img src="/public/images/filter/Solda-2.webp" loading="lazy" class="img-fluid" alt="Fabricação de base para bombas">
+              <img src="/public/images/filter/Solda-2.webp" class="img-fluid" alt="Fabricação de base para bombas">
               <div class="portfolio-info">
                 <h4>Solda</h4>
                 <p>Fabricação de base para bombas</p>
@@ -331,7 +334,7 @@
 
           <div class="drop-shadow-lg col-lg-4 col-md-6 portfolio-item filter-construction">
             <div class="portfolio-content h-100">
-              <img src="/public/images/filter/Fabricacao-2.webp" loading="lazy" class="img-fluid" alt="canhão alimentador">
+              <img src="/public/images/filter/Fabricacao-2.webp" class="img-fluid" alt="canhão alimentador">
               <div class="portfolio-info">
                 <h4>Fabricação</h4>
                 <p>Fabricação de canhão alimentador</p>
@@ -341,7 +344,7 @@
 
           <div class="drop-shadow-lg col-lg-4 col-md-6 portfolio-item filter-repairs">
             <div class="portfolio-content h-100">
-              <img src="/public/images/filter/Reformas-2.webp" loading="lazy" class="img-fluid" alt="Fabricação setor de compostagem">
+              <img src="/public/images/filter/Reformas-2.webp" class="img-fluid" alt="Fabricação setor de compostagem">
               <div class="portfolio-info">
                 <h4>Reforma</h4>
                 <p>Fabricação setor de compostagem</p>
@@ -352,7 +355,7 @@
 
           <div class="drop-shadow-lg col-lg-4 col-md-6 portfolio-item filter-remodeling">
             <div class="portfolio-content h-100">
-              <img src="/public/images/filter/Soldas-3.webp" loading="lazy" class="img-fluid" alt="Solda de gancho">
+              <img src="/public/images/filter/Soldas-3.webp" class="img-fluid" alt="Solda de gancho">
               <div class="portfolio-info">
                 <h4>Solda</h4>
                 <p>Solda de gancho em equipamento</p>
@@ -362,7 +365,7 @@
 
           <div class="drop-shadow-lg col-lg-4 col-md-6 portfolio-item filter-construction">
             <div class="portfolio-content h-100">
-              <img src="/public/images/filter/Fabricacao-3.webp" loading="lazy" class="img-fluid" alt="Fabricação de engate de arado">
+              <img src="/public/images/filter/Fabricacao-3.webp" class="img-fluid" alt="Fabricação de engate de arado">
               <div class="portfolio-info">
                 <h4>Fabricação</h4>
                 <p>Fabricação de engate de arado</p>
@@ -381,44 +384,72 @@
 <section class="flex justify-center items-center">
   <div>
     <div class=" mt-24 md:mt-0 mb-14 sm:pt-24 justify-center items-center">
-        <h1 class="text-xl z-12 sm:text-2xl text-center drop-shadow-lg  Poppins-700 mb-2">Estamos te esperando para lhe atender <br> da melhor maneira possivel!</h1>
+        <h1 data-aos="fade-up" data-aos-duration="2000" class="text-md md:text-2xl text-center drop-shadow-lg  Poppins-700 mb-2">Estamos te esperando para lhe atender <br> da melhor maneira possivel!</h1>
     </div>
-    <div class="flex justify-center items-center mb-10 sm:mb-20">
+    <div data-aos="fade-up" data-aos-duration="2000" class="flex justify-center items-center mb-10 sm:mb-20">
       <a href="https://api.whatsapp.com/send?phone=554899951400&text=Ola%20vim%20pelo%20site%2C%20Gostaria%20de%20solicitar%20um%20Or%C3%A7amento"> <button class="align-middle text-lg bg-Gray drop-shadow-lg text-white rounded Poppins-600 px-4 py-2 sm:px-8  sm:py-3"> Faça seu orçamento <i class="fa-brands fa-whatsapp"></i> </button></a>
     </div>
 </div>
 </section>
 
-<section class="w-full content__max-width mx-auto px-6 xl:px-0  min-h-max flex items-center">
-  <div class="flex scroll-left-1 lg:w-6/12 mr-8 xl:mr-16 justify-center items-center">
-      <div class="w-60 rounded">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0556891848173!2d-49.372027384443676!3d-28.717881682384153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952183373fe1f199%3A0x86e4a0320079bcc6!2sSchmoller%20Manuten%C3%A7%C3%B5es!5e0!3m2!1spt-BR!2sbr!4v1659635831251!5m2!1spt-BR!2sbr" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section class="w-full mt-14 content__max-width mx-auto px-6 xl:px-0 mb-11 lg:mb-28 min-h-max">
+  <div data-aos="fade-up" data-aos-duration="2000" class="flex items-center flex-col mt-4">
+    <div class="flex justify-center grid grid-rows-2 md:grid-rows-1 grid-flow-col w-full">
+      <div class="w-60 m-1 relative flex justify-center  items-center">
+        <div class="drop-shadow-lg rounded">
+            <iframe class="w-72  md:w-80 md:h-60" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.0556891848173!2d-49.372027384443676!3d-28.717881682384153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952183373fe1f199%3A0x86e4a0320079bcc6!2sSchmoller%20Manuten%C3%A7%C3%B5es!5e0!3m2!1spt-BR!2sbr!4v1659635831251!5m2!1spt-BR!2sbr" style="border-radius: 20px;" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="2000" class=" w-60 md:w-96 lg:w-96 relative h-fit rounded-xl ">
+      <div class="drop-shadow-lg md:mt-5 flex justify-center items-center">
+        <div class="flex-col mt-4">
+          <div class="px-1 md:px-0 flex-auto">
+              <h2 class="mb-1 text-BlackLight Poppins-400 text-md md:text-xl ">
+                <i class="fa-solid fa-location-dot"></i> Rod Luiz Rosso</h2>
+                <h2 class="mb-1 text-BlackLight Poppins-400 text-md md:text-xl ">
+                  <i class="fa-solid fa-clock"></i> Seg a sexta das 07 as 18</h2>
+                  <h2 class="mb-1 text-BlackLight Poppins-400 text-md md:text-xl ">
+                    <i class="fa-solid fa-envelope"></i> Contato@schmoller.com</h2>
+                  <h2 class="mb-1 text-BlackLight Poppins-400 text-md md:text-xl ">
+                    <i class="fa-solid fa-phone"></i> (55) 48 9995-1400</h2>
+          </div>
+      </div>
       </div>
   </div>
-  <div class="md:w-12/12 lg:w-6/12">
-      <div class="flex flex-wrap">
-          <div class="md:w-12/12">
-              <div class="flex flex-col mt-4">
-                  <div class="scroll-bottom-1 px-1 md:px-0 flex-auto">
-                      <h2 class="mb-1 text-BlackLight Poppins-400 text-sm md:text-xl lg:text-xl ">
-                        <i class="fa-solid fa-location-dot"></i> Rod Luiz Rosso</h2>
-                        <h2 class="mb-1 text-BlackLight Poppins-400 text-sm md:text-xl lg:text-xl ">
-                          <i class="fa-solid fa-clock"></i> Seg a sexta das 07 as 18</h2>
-                          <h2 class="mb-1 text-BlackLight Poppins-400 text-sm md:text-xl lg:text-xl ">
-                            <i class="fa-solid fa-envelope"></i>Contato@schmoller.com</h2>
-                          <h2 class="mb-1 text-BlackLight Poppins-400 text-sm md:text-xl lg:text-xl ">
-                            <i class="fa-solid fa-phone"></i> (55) 48 9995-1400</h2>
-                  </div>
-              </div>
-          </div>
       </div>
   </div>
 </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class=" w-full bg-Black flex items-center justify-center">
+  <div class="flex flex-col text-gray-300 my-10 md:my-16">
+      <div class="flex justify-center items-center my-10">
+          <a href="https://www.instagram.com/schmollermanutencoes/" class=" mx-5" aria-label="Instagram da Schmoller">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="#c4c4c4" xmlns="http://www.w3.org/2000/svg"
+                  class="hover:-translate-y-1 transition-all">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.315 0C12.745 0 13.099 0.0129999 14.123 0.0599999C15.187 0.109 15.914 0.278 16.55 0.525C17.2175 0.775874 17.8222 1.16936 18.322 1.678C18.8306 2.17777 19.2241 2.7825 19.475 3.45C19.722 4.086 19.891 4.813 19.94 5.877C19.988 6.944 20 7.284 20 10V10.08C20 12.723 19.988 13.067 19.94 14.123C19.891 15.187 19.722 15.914 19.475 16.55C19.2241 17.2175 18.8306 17.8222 18.322 18.322C17.8222 18.8306 17.2175 19.2241 16.55 19.475C15.914 19.722 15.187 19.891 14.123 19.94C13.056 19.988 12.716 20 10 20H9.92C7.277 20 6.933 19.988 5.877 19.94C4.813 19.891 4.086 19.722 3.45 19.475C2.7825 19.2241 2.17777 18.8306 1.678 18.322C1.16936 17.8222 0.775874 17.2175 0.525 16.55C0.278 15.914 0.109 15.187 0.0599999 14.123C0.0129999 13.099 0 12.744 0 10.315V9.685C0 7.255 0.0129999 6.901 0.0599999 5.877C0.109 4.813 0.278 4.086 0.525 3.45C0.775874 2.7825 1.16936 2.17777 1.678 1.678C2.17777 1.16936 2.7825 0.775874 3.45 0.525C4.086 0.278 4.813 0.109 5.877 0.0599999C6.901 0.0129999 7.256 0 9.685 0H10.315ZM10.234 1.802H9.766C7.31 1.802 6.982 1.813 5.959 1.86C4.984 1.905 4.455 2.067 4.102 2.204C3.635 2.386 3.302 2.602 2.952 2.952C2.602 3.302 2.386 3.635 2.204 4.102C2.067 4.455 1.904 4.984 1.86 5.959C1.813 6.982 1.802 7.31 1.802 9.766V10.234C1.802 12.69 1.813 13.018 1.86 14.041C1.905 15.016 2.067 15.545 2.204 15.898C2.386 16.364 2.603 16.698 2.952 17.048C3.302 17.398 3.635 17.614 4.102 17.796C4.455 17.933 4.984 18.096 5.959 18.14C7.013 18.188 7.329 18.198 10 18.198H10.08C12.677 18.198 12.997 18.188 14.04 18.14C15.016 18.095 15.545 17.933 15.898 17.796C16.364 17.614 16.698 17.398 17.048 17.048C17.398 16.698 17.614 16.365 17.796 15.898C17.933 15.545 18.096 15.016 18.14 14.041C18.188 12.986 18.198 12.671 18.198 10V9.92C18.198 7.323 18.188 7.003 18.14 5.96C18.095 4.984 17.933 4.455 17.796 4.102C17.6358 3.66757 17.3802 3.2746 17.048 2.952C16.7254 2.61986 16.3324 2.36426 15.898 2.204C15.545 2.067 15.016 1.904 14.041 1.86C13.018 1.813 12.69 1.802 10.234 1.802ZM10 4.865C10.6743 4.865 11.3421 4.99782 11.9651 5.25588C12.5881 5.51394 13.1542 5.89218 13.631 6.36901C14.1078 6.84584 14.4861 7.41191 14.7441 8.03492C15.0022 8.65793 15.135 9.32566 15.135 10C15.135 10.6743 15.0022 11.3421 14.7441 11.9651C14.4861 12.5881 14.1078 13.1542 13.631 13.631C13.1542 14.1078 12.5881 14.4861 11.9651 14.7441C11.3421 15.0022 10.6743 15.135 10 15.135C8.63811 15.135 7.33201 14.594 6.36901 13.631C5.40601 12.668 4.865 11.3619 4.865 10C4.865 8.63811 5.40601 7.33201 6.36901 6.36901C7.33201 5.40601 8.63811 4.865 10 4.865ZM10 6.667C9.11603 6.667 8.26827 7.01815 7.64321 7.64321C7.01815 8.26827 6.667 9.11603 6.667 10C6.667 10.884 7.01815 11.7317 7.64321 12.3568C8.26827 12.9818 9.11603 13.333 10 13.333C10.884 13.333 11.7317 12.9818 12.3568 12.3568C12.9818 11.7317 13.333 10.884 13.333 10C13.333 9.11603 12.9818 8.26827 12.3568 7.64321C11.7317 7.01815 10.884 6.667 10 6.667ZM15.338 3.462C15.6563 3.462 15.9615 3.58843 16.1865 3.81347C16.4116 4.03852 16.538 4.34374 16.538 4.662C16.538 4.98026 16.4116 5.28548 16.1865 5.51053C15.9615 5.73557 15.6563 5.862 15.338 5.862C15.0197 5.862 14.7145 5.73557 14.4895 5.51053C14.2644 5.28548 14.138 4.98026 14.138 4.662C14.138 4.34374 14.2644 4.03852 14.4895 3.81347C14.7145 3.58843 15.0197 3.462 15.338 3.462Z"
+                      fill="#c4c4c4" />
+              </svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=554899951400&text=Ola%20vim%20pelo%20site%2C%20Gostaria%20de%20solicitar%20um%20Or%C3%A7amento" class=" mx-5"
+              aria-label="Whatsapp Schmoller">
+              <svg class="hover:-translate-y-1 transition-all" fill="#c4c4c4" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="23px" height="23px">    
+                <path d="M 12.011719 2 C 6.5057187 2 2.0234844 6.478375 2.0214844 11.984375 C 2.0204844 13.744375 2.4814687 15.462563 3.3554688 16.976562 L 2 22 L 7.2324219 20.763672 C 8.6914219 21.559672 10.333859 21.977516 12.005859 21.978516 L 12.009766 21.978516 C 17.514766 21.978516 21.995047 17.499141 21.998047 11.994141 C 22.000047 9.3251406 20.962172 6.8157344 19.076172 4.9277344 C 17.190172 3.0407344 14.683719 2.001 12.011719 2 z M 12.009766 4 C 14.145766 4.001 16.153109 4.8337969 17.662109 6.3417969 C 19.171109 7.8517969 20.000047 9.8581875 19.998047 11.992188 C 19.996047 16.396187 16.413812 19.978516 12.007812 19.978516 C 10.674812 19.977516 9.3544062 19.642812 8.1914062 19.007812 L 7.5175781 18.640625 L 6.7734375 18.816406 L 4.8046875 19.28125 L 5.2851562 17.496094 L 5.5019531 16.695312 L 5.0878906 15.976562 C 4.3898906 14.768562 4.0204844 13.387375 4.0214844 11.984375 C 4.0234844 7.582375 7.6067656 4 12.009766 4 z M 8.4765625 7.375 C 8.3095625 7.375 8.0395469 7.4375 7.8105469 7.6875 C 7.5815469 7.9365 6.9355469 8.5395781 6.9355469 9.7675781 C 6.9355469 10.995578 7.8300781 12.182609 7.9550781 12.349609 C 8.0790781 12.515609 9.68175 15.115234 12.21875 16.115234 C 14.32675 16.946234 14.754891 16.782234 15.212891 16.740234 C 15.670891 16.699234 16.690438 16.137687 16.898438 15.554688 C 17.106437 14.971687 17.106922 14.470187 17.044922 14.367188 C 16.982922 14.263188 16.816406 14.201172 16.566406 14.076172 C 16.317406 13.951172 15.090328 13.348625 14.861328 13.265625 C 14.632328 13.182625 14.464828 13.140625 14.298828 13.390625 C 14.132828 13.640625 13.655766 14.201187 13.509766 14.367188 C 13.363766 14.534188 13.21875 14.556641 12.96875 14.431641 C 12.71875 14.305641 11.914938 14.041406 10.960938 13.191406 C 10.218937 12.530406 9.7182656 11.714844 9.5722656 11.464844 C 9.4272656 11.215844 9.5585938 11.079078 9.6835938 10.955078 C 9.7955938 10.843078 9.9316406 10.663578 10.056641 10.517578 C 10.180641 10.371578 10.223641 10.267562 10.306641 10.101562 C 10.389641 9.9355625 10.347156 9.7890625 10.285156 9.6640625 C 10.223156 9.5390625 9.737625 8.3065 9.515625 7.8125 C 9.328625 7.3975 9.131125 7.3878594 8.953125 7.3808594 C 8.808125 7.3748594 8.6425625 7.375 8.4765625 7.375 z"/>
+                </svg>
+          </a>
+      </div>
+      <div class="mx-10">
+          <p class="text-center text-Footer text-sm md:text-base"> © 2022 Schmoller Manutenção. Todos os direitos reservados. <br> Desenvolvido por <span class="text-Purple"> <a href="https://ileonardo.codes/">Ileonardo</a></span></p>
+      </div>
+  </div>
+</footer>
   <script src="/src/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   
 </body>
 
