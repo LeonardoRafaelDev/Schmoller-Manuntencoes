@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Noindex: /assets/
+Noindex: /public/
+Noindex: /src/
